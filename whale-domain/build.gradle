@@ -1,0 +1,13 @@
+dependencies {
+    implementation project(':whale-shared')
+    implementation("org.springframework.boot:spring-boot-starter:$springBootVersion")
+
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

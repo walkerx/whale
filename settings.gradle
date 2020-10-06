@@ -1,0 +1,10 @@
+rootProject.name = 'whale'
+
+include 'whale-shared'
+include 'whale-domain'
+include 'whale-infrastructure'
+include 'whale-app'
+include 'whale-user-interface'
+include 'whale-bootstrap'
+include 'whale-base'
+

@@ -1,0 +1,16 @@
+
+dependencies {
+    implementation(project(':whale-shared'))
+    implementation(project(':whale-domain'))
+    implementation(project(':whale-infrastructure'))
+    implementation("org.springframework.boot:spring-boot-starter:$springBootVersion")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:$springBootVersion")
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}

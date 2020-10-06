@@ -1,0 +1,20 @@
+
+
+dependencies {
+    implementation project(':whale-shared')
+    implementation project(':whale-app')
+    implementation("org.springframework.boot:spring-boot-starter:$springBootVersion")
+    implementation("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
